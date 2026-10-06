@@ -1,0 +1,14 @@
+# 换行符策略
+# 仓库内统一按 LF 存储，检出时由 Git 按平台自动转换。
+# 这样 Windows（CCS）与 Linux/macOS 的协作者都不会因为 CRLF 产生虚假 diff。
+* text=auto
+
+# 二进制文件不做换行转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.docx binary
+*.xlsx binary
+*.zip  binary

@@ -1,0 +1,25 @@
+{
+  "SERIAL_PORT": "COM9",
+  "BAUD_RATE": 9600,
+  "HARDWARE_PROFILE": "generic_serial_csv",
+  "LLM_API_KEY": "your-api-key-here",
+  "LLM_API_BASE_URL": "https://api.openai.com/v1",
+  "LLM_MODEL_NAME": "gpt-4o",
+  "LLM_PROVIDER": "openai",
+  "BUFFER_SIZE": 100,
+  "MIN_ERROR_THRESHOLD": 0.3,
+  "MAX_TUNING_ROUNDS": 30,
+  "GOOD_ENOUGH_AVG_ERROR": 1.0,
+  "GOOD_ENOUGH_STEADY_STATE_ERROR": 1.5,
+  "GOOD_ENOUGH_OVERSHOOT": 3.0,
+  "REQUIRED_STABLE_ROUNDS": 3,
+  "PID_LIMITS": {
+    "default": {
+      "p": {"min": 0.0, "max": 5.0, "max_increase_ratio": 1.5},
+      "i": {"min": 0.0, "max": 1.0, "max_increase_ratio": 1.5},
+      "d": {"min": 0.0, "max": 5.0, "max_increase_ratio": 1.5}
+    }
+  },
+  "PID_MAX_INCREASE_RATIO": 1.5,
+  "CSV_EXPORT_PATH": "logs/mspm0_speed_tuning.csv"
+}
